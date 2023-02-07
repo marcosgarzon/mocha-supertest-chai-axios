@@ -1,6 +1,6 @@
 # mocha-supertest-chai
   
-![image](https://user-images.githubusercontent.com/96453171/217134567-ceee67c9-f74d-4d10-98eb-fbaaec84fe64.png)
+![image](https://user-images.githubusercontent.com/96453171/217135417-cb0aa362-674c-41ea-baf7-c20fa65739ec.png)
 
 # Axios
 

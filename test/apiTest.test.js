@@ -4,7 +4,7 @@ const expect = chai.expect;
 
 const request = supertest('http://localhost:8080')
 
-let id = ''
+let _id = '63e1babfabfce9c11a711428'
 
 describe('test Api-productos', () => {
   describe('GET', () => {
@@ -42,14 +42,14 @@ describe('test Api-productos', () => {
         precio: 300,
         stock: 8,
         }
-      let res = await request.put(`/api/productos/${id}`).send(modification)
+      let res = await request.put(`/api/productos/${_id}`).send(modification)
       expect(res.status).to.equal(200)
     })
   })
   
   describe('DELETE', () => {
     it('Debe poder eliminar un producto por su id', async () => {
-      let res = await request.delete(`/api/productos/${id}`).send()
+      let res = await request.delete(`/api/productos/${_id}`).send()
       expect(res.status).to.equal(200)
     })
   })
